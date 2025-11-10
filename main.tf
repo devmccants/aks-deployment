@@ -80,7 +80,7 @@ resource "azurerm_kubernetes_cluster" "mac-kube" {
   default_node_pool {
     name       = "default"
     node_count = 1
-    vm_size    = "Standard_D2_V2"
+    vm_size    = "standard_a2_v2""
   }
 
   identity {
@@ -90,4 +90,5 @@ resource "azurerm_kubernetes_cluster" "mac-kube" {
   tags = {
     environment = "Development"
   }
+
 } 
